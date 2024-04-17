@@ -1,0 +1,4 @@
+{
+	"*.(j|t)s": "npm run lint:fix",
+	"*{css,s(a|c)ss}": "npm run stylelint:fix"
+}
