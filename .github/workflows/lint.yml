@@ -16,3 +16,6 @@ jobs:
 
             - name: 👔 StyleLint
               run: npm run stylelint
+
+            - name: 🔍 HTML
+              run: npm run lint-html

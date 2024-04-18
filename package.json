@@ -3,8 +3,13 @@
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
 		"lint": "eslint ./**/*.{js,mjs,cjs,ts,mts,cts}",
 		"lint:fix": "eslint --fix ./**/*.{js,mjs,cjs,ts,mts,cts}",
+		"lint-html": "prettier ./**/*.html --check",
+		"lint-html:fix": "prettier ./**/*.html --write",
 		"stylelint": "stylelint ./**/*.{css,scss}",
 		"stylelint:fix": "stylelint --fix ./**/*.{css,scss}",
 		"start": "http-server ./src -p 8080",
@@ -45,7 +50,8 @@
 		"stylelint-order": "^6.0.4",
 		"stylelint-prettier": "^5.0.0",
 		"ts-node": "^10.9.2",
-		"typescript": "^5.4.5"
+		"typescript": "^5.4.5",
+		"vite": "^5.2.0"
 	},
 	"imports": {
 		"@/*": [
